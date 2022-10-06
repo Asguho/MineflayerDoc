@@ -10,7 +10,7 @@ const mineflayer = require('mineflayer')
 
 const bot = mineflayer.createBot({
   host: 'pvp.asguho.dk',
-  port: '25575',
+  port: '25543',
   username: 'player1',
 })
 
