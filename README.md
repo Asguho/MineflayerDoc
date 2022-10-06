@@ -22,4 +22,36 @@ bot.on('chat', (username, message) => {
 bot.on('kicked', console.log)
 bot.on('error', console.log)
 ```
+```
+async function craftItem (name, amount) {
+  amount = parseInt(amount, 10)
+  const mcData = require('minecraft-data')(bot.version)
+
+  const item = mcData.itemsByName[name]
+  const craftingTableID = mcData.blocksByName.crafting_table.id
+
+  const craftingTable = bot.findBlock({
+    matching: craftingTableID
+  })
+
+  if (item) {
+    const recipe = bot.recipesFor(item.id, null, 1, craftingTable)[0]
+    if (recipe) {
+      bot.chat(`I can make ${name}`)
+      try {
+        await bot.craft(recipe, amount, craftingTable)
+        bot.chat(`did the recipe for ${name} ${amount} times`)
+      } catch (err) {
+        bot.chat(`error making ${name}`)
+      }
+    } else {
+      bot.chat(`I cannot make ${name}`)
+    }
+  } else {
+    bot.chat(`unknown item: ${name}`)
+  }
+}
+```
+
+
 https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md
