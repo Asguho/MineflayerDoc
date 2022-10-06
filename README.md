@@ -13,13 +13,10 @@ const bot = mineflayer.createBot({
   port: '25543',
   username: 'player1',
 })
-
-bot.on('chat', chatBack(username, message));
-
-function chatBack(username, message){
-  if (username === bot.username) {return}
+bot.on('chat', (username, message) => {
+  if (username === bot.username) return
   bot.chat(message)
-}
+})
 
 // Log errors and kick reasons:
 bot.on('kicked', console.log)
