@@ -22,3 +22,4 @@ bot.on('chat', (username, message) => {
 bot.on('kicked', console.log)
 bot.on('error', console.log)
 ```
+https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md
