@@ -60,6 +60,34 @@ if(message == 'hit'){
 bot.on('kicked', console.error)
 bot.on('error', console.error)
 ```
+## pathfinding example
+```
+const mineflayer = require('mineflayer')
+const { pathfinder, Movements, goals } = require("mineflayer-pathfinder");
+
+//creating the bot
+const bot = mineflayer.createBot({
+  host: 'pvp.asguho.dk',
+  port: '25543',
+  username: 'player1',
+})
+
+//loading the pathfinder plugin
+bot.loadPlugin(pathfinder);
+
+//on the event chat, if the messsage is come, then it pathfinds to the nearest entity
+bot.on('chat', (username, message) => {
+if(message == 'come'){
+  const target = bot.nearestEntity();
+  bot.pathfinder.setGoal(new goals.GoalNear(p.x, p.y, p.z, 1))
+  }
+})
+
+// Log errors and kick reasons:
+bot.on('kicked', console.error)
+bot.on('error', console.error)
+```
+
 ## Crafting function example
 har du aldrig prøvet async funtioner så læs her: [promises](https://github.com/PrismarineJS/mineflayer/blob/master/docs/tutorial.md#promises)
 ```
