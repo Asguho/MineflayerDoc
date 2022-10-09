@@ -169,6 +169,7 @@ async function craftItem (name, amount) {
 ## [perfekt bow](https://github.com/sefirosweb/minecraftHawkEye)
 ## [Auto equip armor](https://github.com/G07cha/MineflayerArmorManager)
 ## [view the bot in the browser](https://github.com/PrismarineJS/prismarine-viewer)
+## [Hvordan man bruger chest, furnaces, enchanting tables osv.](https://github.com/PrismarineJS/mineflayer/blob/master/examples/chest.js)
 ## [statemachine](https://github.com/PrismarineJS/mineflayer-statemachine)
 ## [make a schematic builder](https://github.com/PrismarineJS/prismarine-schematic) [(et forsøg på det, men man skal være i creative)](https://github.com/PrismarineJS/mineflayer-builder)
 
