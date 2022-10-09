@@ -93,13 +93,13 @@ bot.on('kicked', console.error)
 bot.on('error', console.error)
 ```
 ## Loop snipet
-har du aldrig arbejdet med events så læs her: [events](https://github.com/PrismarineJS/mineflayer/blob/master/docs/tutorial.md#listening-for-an-event)
+har du aldrig arbejdet med events så læs her: [Listening for an event](https://github.com/PrismarineJS/mineflayer/blob/master/docs/tutorial.md#listening-for-an-event)
 ```
 bot.on('physicsTick', () => {
     //alt herinde vil blive kørt hvert tick, aka 20 gange i sekundet.
 })
 ```
-events er virkelig pratiske her er alle dem fra mineflayer: [events](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md#events)
+events er virkelig pratiske her er alle dem fra mineflayer: [mineflayer events](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md#events)
 
 ## Collect block example
 husk at installere mineflayer-collectblock:
