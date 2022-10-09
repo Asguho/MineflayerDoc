@@ -100,6 +100,29 @@ bot.on('physicsTick', () => {
 })
 ```
 events er virkelig pratiske her er alle dem fra mineflayer: [events](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md#events)
+
+## Collect block example
+husk at download mineflayer-collectblock:
+```
+npm i mineflayer-collectblock
+```
+
+```
+bot.loadPlugin(require('mineflayer-blockfinder').plugin);
+
+bot.on('chat', (username, message) => {
+if(message == 'dig'){
+    const mcData = require('minecraft-data')(bot.version);
+
+    const dirtblock = bot.findBlock({
+      matching: mcData.blocksByName.oak_log.id,
+      maxDistance: 64
+    })
+    
+    bot.collectBlock.collect(dirtblock)
+  }
+})
+```
 ## Crafting function example
 har du aldrig prøvet async funtioner så læs her: [promises](https://github.com/PrismarineJS/mineflayer/blob/master/docs/tutorial.md#promises)
 ```
@@ -133,7 +156,3 @@ async function craftItem (name, amount) {
 }
 ```
 
-```
-
-npm i mineflayer-collectblock
-```
