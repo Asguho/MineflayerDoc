@@ -22,18 +22,21 @@ npm i mineflayer-collectblock
 ```
 const mineflayer = require('mineflayer')
 
+//creating the bot
 const bot = mineflayer.createBot({
   host: 'pvp.asguho.dk',
   port: '25543',
   username: 'player1',
 })
+
+//on the event spawn, sent in chat the message 'helloworld'
 bot.on('spawn', (username, message) => {
   bot.chat('hello world')
 })
 
 // Log errors and kick reasons:
-bot.on('kicked', console.log)
-bot.on('error', console.log)
+bot.on('kicked', console.error)
+bot.on('error', console.error)
 ```
 ## crafting function example
 ```
