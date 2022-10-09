@@ -30,8 +30,30 @@ const bot = mineflayer.createBot({
 })
 
 //on the event spawn, sent in chat the message 'helloworld'
-bot.on('spawn', (username, message) => {
+bot.on('spawn', () => {
   bot.chat('hello world')
+})
+
+// Log errors and kick reasons:
+bot.on('kicked', console.error)
+bot.on('error', console.error)
+```
+## Attack example
+```
+const mineflayer = require('mineflayer')
+
+//creating the bot
+const bot = mineflayer.createBot({
+  host: 'pvp.asguho.dk',
+  port: '25543',
+  username: 'player1',
+})
+
+//on the event spawn, sent in chat the message 'helloworld'
+bot.on('chat', (username, message) => {
+if(message == 'hit'){
+  bot.attack(bot.nearestEntity())
+  }
 })
 
 // Log errors and kick reasons:
