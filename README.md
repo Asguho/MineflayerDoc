@@ -16,6 +16,8 @@ husk at have downloadet [NodeJs](https://nodejs.org/en/) & [vscode](https://code
 npm init -y
 npm i mineflayer
 ```
+- herefter bare lav en tom javascript fil (f.eks. index.js)
+- nu kan du prøve og lave din første minecraft bot!!
 ## Hello world example
 ```
 const mineflayer = require('mineflayer')
