@@ -19,7 +19,7 @@ npm i mineflayer
 - herefter bare lav en tom javascript fil (f.eks. index.js)
 - nu kan du prøve og lave din første minecraft bot!!
 ## Hello world example
-```
+```js
 const mineflayer = require('mineflayer')
 
 //creating the bot
@@ -39,7 +39,7 @@ bot.on('kicked', console.error)
 bot.on('error', console.error)
 ```
 ## Attack example
-```
+```js
 const mineflayer = require('mineflayer')
 
 //creating the bot
@@ -66,7 +66,7 @@ husk at installere pathfinderen:
 npm i mineflayer-pathfinder
 ```
 for en list af goals her: [goals](https://github.com/PrismarineJS/mineflayer-pathfinder#Goals)
-```
+```js
 const mineflayer = require('mineflayer')
 const { pathfinder, Movements, goals } = require("mineflayer-pathfinder");
 
@@ -94,7 +94,7 @@ bot.on('error', console.error)
 ```
 ## Loop snipet
 har du aldrig arbejdet med events så læs her: [Listening for an event](https://github.com/PrismarineJS/mineflayer/blob/master/docs/tutorial.md#listening-for-an-event)
-```
+```js
 bot.on('physicsTick', () => {
     //alt herinde vil blive kørt hvert tick, aka 20 gange i sekundet.
 })
@@ -107,7 +107,7 @@ husk at installere mineflayer-collectblock:
 npm i mineflayer-collectblock
 ```
 
-```
+```js
 bot.loadPlugin(require('mineflayer-blockfinder').plugin);
 
 bot.on('chat', async (username, message) => {
@@ -126,7 +126,7 @@ if(message == 'dig'){
 ```
 ## Crafting function example
 har du aldrig prøvet async funtioner så læs her: [promises](https://github.com/PrismarineJS/mineflayer/blob/master/docs/tutorial.md#promises)
-```
+```js
 bot.on('chat', async (username, message) => {
   if(message == 'craft'){
     await craftItem(oak_planks, 1);
