@@ -10,13 +10,11 @@
 ## setup
 husk at have downloadet [NodeJs](https://nodejs.org/en/) & [vscode](https://code.visualstudio.com/)
 - lav en tom mappe
-- open i vscode
+- open mappen i vscode
 - kør følgende commands:
 ```
 npm init -y
 npm i mineflayer
-npm i mineflayer-pathfinder
-npm i mineflayer-collectblock
 ```
 ## hello world example
 ```
@@ -68,4 +66,9 @@ async function craftItem (name, amount) {
     bot.chat(`unknown item: ${name}`)
   }
 }
+```
+
+```
+npm i mineflayer-pathfinder
+npm i mineflayer-collectblock
 ```
