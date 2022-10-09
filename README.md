@@ -11,8 +11,8 @@
 husk at have downloadet [NodeJs](https://nodejs.org/en/) & [vscode](https://code.visualstudio.com/)
 - lav en tom mappe
 - open mappen i vscode
-- kør følgende commands:
-```
+- kør følgende commands i terminalen
+```shell
 npm init -y
 npm i mineflayer
 ```
@@ -62,7 +62,7 @@ bot.on('error', console.error)
 ```
 ## pathfinding example
 husk at installere pathfinderen:
-```
+```shell
 npm i mineflayer-pathfinder
 ```
 for en list af goals her: [goals](https://github.com/PrismarineJS/mineflayer-pathfinder#Goals)
@@ -103,7 +103,7 @@ events er virkelig pratiske her er alle dem fra mineflayer: [mineflayer events](
 
 ## Collect block example
 husk at installere mineflayer-collectblock:
-```
+```shell
 npm i mineflayer-collectblock
 ```
 
