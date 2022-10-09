@@ -92,7 +92,7 @@ if(message == 'come'){
 bot.on('kicked', console.error)
 bot.on('error', console.error)
 ```
-## loop snipet
+## Loop snipet
 har du aldrig arbejdet med events så læs her: [events](https://github.com/PrismarineJS/mineflayer/blob/master/docs/tutorial.md#listening-for-an-event)
 ```
 bot.on('physicsTick', () => {
