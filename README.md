@@ -102,7 +102,7 @@ bot.on('physicsTick', () => {
 events er virkelig pratiske her er alle dem fra mineflayer: [events](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md#events)
 
 ## Collect block example
-husk at download mineflayer-collectblock:
+husk at installere mineflayer-collectblock:
 ```
 npm i mineflayer-collectblock
 ```
