@@ -128,12 +128,11 @@ if(message == 'dig'){
 har du aldrig prøvet async funtioner så læs her: [promises](https://github.com/PrismarineJS/mineflayer/blob/master/docs/tutorial.md#promises)
 ```
 bot.on('chat', async (username, message) => {
-if(message == 'craft'){
+  if(message == 'craft'){
     await craftItem(oak_planks, 1);
     bot.chat('done crafting!!');
   }
 })
-
 
 async function craftItem (name, amount) {
   amount = parseInt(amount, 10)
