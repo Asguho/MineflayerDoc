@@ -110,7 +110,7 @@ npm i mineflayer-collectblock
 ```
 bot.loadPlugin(require('mineflayer-blockfinder').plugin);
 
-bot.on('chat', (username, message) => {
+bot.on('chat', async (username, message) => {
 if(message == 'dig'){
     const mcData = require('minecraft-data')(bot.version);
 
@@ -119,7 +119,8 @@ if(message == 'dig'){
       maxDistance: 64
     })
     
-    bot.collectBlock.collect(dirtblock)
+    await bot.collectBlock.collect(dirtblock)
+    bot.chat('dirt collected')
   }
 })
 ```
