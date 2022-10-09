@@ -127,6 +127,13 @@ if(message == 'dig'){
 ## Crafting function example
 har du aldrig prøvet async funtioner så læs her: [promises](https://github.com/PrismarineJS/mineflayer/blob/master/docs/tutorial.md#promises)
 ```
+bot.on('chat', async (username, message) => {
+if(message == 'craft'){
+    craftItem(oak_planks, 1)
+  }
+})
+
+
 async function craftItem (name, amount) {
   amount = parseInt(amount, 10)
   const mcData = require('minecraft-data')(bot.version)
