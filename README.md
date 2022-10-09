@@ -1,13 +1,13 @@
 # MineflayerDoc
-## docs
-### mineflayer docs
+## Docs
+### Mineflayer docs
 - [mineflayer](https://github.com/PrismarineJS/mineflayer)
 - [mineflayer docs](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md)
 - [javascipt examples](https://github.com/PrismarineJS/mineflayer/tree/master/examples)
 - [python tutorial/examples](https://github.com/PrismarineJS/mineflayer/tree/master/examples/python)
-### pathfinding docs
+### Pathfinding docs
 - [pathfinder](https://github.com/PrismarineJS/mineflayer-pathfinder)
-## setup
+## Setup
 husk at have downloadet [NodeJs](https://nodejs.org/en/) & [vscode](https://code.visualstudio.com/)
 - lav en tom mappe
 - open mappen i vscode
@@ -16,7 +16,7 @@ husk at have downloadet [NodeJs](https://nodejs.org/en/) & [vscode](https://code
 npm init -y
 npm i mineflayer
 ```
-## hello world example
+## Hello world example
 ```
 const mineflayer = require('mineflayer')
 
@@ -36,7 +36,7 @@ bot.on('spawn', (username, message) => {
 bot.on('kicked', console.error)
 bot.on('error', console.error)
 ```
-## crafting function example
+## Crafting function example
 ```
 async function craftItem (name, amount) {
   amount = parseInt(amount, 10)
