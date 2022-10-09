@@ -61,6 +61,10 @@ bot.on('kicked', console.error)
 bot.on('error', console.error)
 ```
 ## pathfinding example
+husk at installere pathfinderen:
+```
+npm i mineflayer-pathfinder
+```
 for en list af goals her: [goals](https://github.com/PrismarineJS/mineflayer-pathfinder#Goals)
 ```
 const mineflayer = require('mineflayer')
@@ -123,6 +127,6 @@ async function craftItem (name, amount) {
 ```
 
 ```
-npm i mineflayer-pathfinder
+
 npm i mineflayer-collectblock
 ```
