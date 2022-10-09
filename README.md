@@ -8,6 +8,7 @@
 ### pathfinding docs
 - [pathfinder](https://github.com/PrismarineJS/mineflayer-pathfinder)
 ## setup
+husk at have downloadet [NodeJs](https://nodejs.org/en/), [vscode](https://code.visualstudio.com/)
 - lav en tom mappe
 - open i vscode
 - kør følgende commands:
