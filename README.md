@@ -61,6 +61,7 @@ bot.on('kicked', console.error)
 bot.on('error', console.error)
 ```
 ## pathfinding example
+for en list af goals her: [goals](https://github.com/PrismarineJS/mineflayer-pathfinder#Goals)
 ```
 const mineflayer = require('mineflayer')
 const { pathfinder, Movements, goals } = require("mineflayer-pathfinder");
