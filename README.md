@@ -171,5 +171,5 @@ async function craftItem (name, amount) {
 ## [view the bot in the browser](https://github.com/PrismarineJS/prismarine-viewer)
 ## [statemachine](https://github.com/PrismarineJS/mineflayer-statemachine)
 ## make a schematic builder
-([schematic](https://github.com/PrismarineJS/prismarine-schematic) [et forsøg på det](https://github.com/PrismarineJS/mineflayer-builder)
+[schematic](https://github.com/PrismarineJS/prismarine-schematic) [et forsøg på det](https://github.com/PrismarineJS/mineflayer-builder)
 
