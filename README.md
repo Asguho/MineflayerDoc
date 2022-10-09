@@ -6,6 +6,7 @@ npm i mineflayer
 npm i mineflayer-pathfinder
 npm i mineflayer-collectblock
 ```
+## hello world
 ```
 const mineflayer = require('mineflayer')
 
@@ -14,9 +15,8 @@ const bot = mineflayer.createBot({
   port: '25543',
   username: 'player1',
 })
-bot.on('chat', (username, message) => {
-  if (username === bot.username) return
-  bot.chat(message)
+bot.on('spawn', (username, message) => {
+  bot.chat('hello world')
 })
 
 // Log errors and kick reasons:
