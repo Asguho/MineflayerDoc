@@ -110,6 +110,13 @@ npm i mineflayer-collectblock
 ```
 bot.loadPlugin(require('mineflayer-blockfinder').plugin);
 
+//creating the bot
+const bot = mineflayer.createBot({
+  host: 'pvp.asguho.dk',
+  port: '25543',
+  username: 'player1',
+})
+
 bot.on('chat', async (username, message) => {
 if(message == 'dig'){
     const mcData = require('minecraft-data')(bot.version);
@@ -127,6 +134,13 @@ if(message == 'dig'){
 ## Crafting function example
 har du aldrig prøvet async funtioner så læs her: [promises](https://github.com/PrismarineJS/mineflayer/blob/master/docs/tutorial.md#promises)
 ```
+//creating the bot
+const bot = mineflayer.createBot({
+  host: 'pvp.asguho.dk',
+  port: '25543',
+  username: 'player1',
+})
+
 async function craftItem (name, amount) {
   amount = parseInt(amount, 10)
   const mcData = require('minecraft-data')(bot.version)
