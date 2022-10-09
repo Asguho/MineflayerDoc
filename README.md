@@ -37,6 +37,7 @@ bot.on('kicked', console.error)
 bot.on('error', console.error)
 ```
 ## Crafting function example
+har du aldrig prøvet async funtioner så læs her: [promises](https://github.com/PrismarineJS/mineflayer/blob/master/docs/tutorial.md#promises)
 ```
 async function craftItem (name, amount) {
   amount = parseInt(amount, 10)
