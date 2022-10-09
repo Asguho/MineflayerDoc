@@ -170,6 +170,5 @@ async function craftItem (name, amount) {
 ## [Auto equip armor](https://github.com/G07cha/MineflayerArmorManager)
 ## [view the bot in the browser](https://github.com/PrismarineJS/prismarine-viewer)
 ## [statemachine](https://github.com/PrismarineJS/mineflayer-statemachine)
-## make a schematic builder
-[schematic](https://github.com/PrismarineJS/prismarine-schematic) [et forsøg på det](https://github.com/PrismarineJS/mineflayer-builder)
+## [make a schematic builder](https://github.com/PrismarineJS/prismarine-schematic) [(et forsøg på det, men man skal være i creative)](https://github.com/PrismarineJS/mineflayer-builder)
 
