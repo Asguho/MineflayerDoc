@@ -129,7 +129,8 @@ har du aldrig prøvet async funtioner så læs her: [promises](https://github.co
 ```
 bot.on('chat', async (username, message) => {
 if(message == 'craft'){
-    craftItem(oak_planks, 1)
+    await craftItem(oak_planks, 1);
+    bot.chat('done crafting!!');
   }
 })
 
