@@ -18,7 +18,7 @@ npm i mineflayer
 ```
 - herefter bare lav en tom javascript fil (f.eks. index.js)
 - nu kan du prøve og lave din første minecraft bot!!
-## Hello world example
+## [Hello world example](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md#mineflayercreatebotoptions)
 ```js
 const mineflayer = require('mineflayer')
 
@@ -38,7 +38,7 @@ bot.on('spawn', () => {
 bot.on('kicked', console.error)
 bot.on('error', console.error)
 ```
-## Attack example
+## [Attack example](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md#botattackentity-swing--true)
 ```js
 const mineflayer = require('mineflayer')
 
@@ -60,7 +60,7 @@ if(message == 'hit'){
 bot.on('kicked', console.error)
 bot.on('error', console.error)
 ```
-## pathfinding example
+## [pathfinding example](https://github.com/PrismarineJS/mineflayer-pathfinder#goalnearx-y-z-range)
 husk at installere pathfinderen:
 ```shell
 npm i mineflayer-pathfinder
@@ -92,7 +92,7 @@ if(message == 'come'){
 bot.on('kicked', console.error)
 bot.on('error', console.error)
 ```
-## Loop snipet
+## [Loop snipet](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md#physicstick-)
 har du aldrig arbejdet med events så læs her: [Listening for an event](https://github.com/PrismarineJS/mineflayer/blob/master/docs/tutorial.md#listening-for-an-event)
 ```js
 bot.on('physicsTick', () => {
@@ -101,7 +101,7 @@ bot.on('physicsTick', () => {
 ```
 events er virkelig pratiske her er alle dem fra mineflayer: [mineflayer events](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md#events)
 
-## Collect block example
+## [Collect block example](https://github.com/TheDudeFromCI/mineflayer-collectblock/blob/master/docs/api.md#collect)
 husk at installere mineflayer-collectblock:
 ```shell
 npm i mineflayer-collectblock
@@ -124,7 +124,7 @@ if(message == 'dig'){
   }
 })
 ```
-## Crafting function example
+## [Crafting function example](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md#botcraftrecipe-count-craftingtable)
 har du aldrig prøvet async funtioner så læs her: [promises](https://github.com/PrismarineJS/mineflayer/blob/master/docs/tutorial.md#promises)
 ```js
 bot.on('chat', async (username, message) => {
