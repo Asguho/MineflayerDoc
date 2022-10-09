@@ -8,6 +8,9 @@
 ### pathfinding docs
 - [pathfinder](https://github.com/PrismarineJS/mineflayer-pathfinder)
 ## setup
+- lav en tom mappe
+- open i vscode
+- kør følgende commands:
 ```
 npm init -y
 npm i mineflayer
