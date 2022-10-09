@@ -5,6 +5,8 @@
 - [mineflayer docs](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md)
 - [javascipt examples](https://github.com/PrismarineJS/mineflayer/tree/master/examples)
 - [python tutorial/examples](https://github.com/PrismarineJS/mineflayer/tree/master/examples/python)
+### pathfinding docs
+- [pathfinder](https://github.com/PrismarineJS/mineflayer-pathfinder)
 ## setup
 ```
 npm init -y
