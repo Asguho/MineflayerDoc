@@ -18,7 +18,7 @@ npm i mineflayer
 ```
 - herefter bare lav en tom javascript fil (f.eks. index.js)
 - nu kan du prøve og lave din første minecraft bot!!
-## [Hello world example](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md#mineflayercreatebotoptions)
+## [Hello world example](https://github.com/PrismarineJS/mineflayer/blob/master/docs/tutorial.md#creating-a-bot)
 ```js
 const mineflayer = require('mineflayer')
 
