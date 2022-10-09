@@ -1,5 +1,10 @@
 # MineflayerDoc
-
+## docs
+### mineflayer docs
+- https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md
+### mineflayer examples
+- [javascipt](https://github.com/PrismarineJS/mineflayer/tree/master/examples)
+## setup
 ```
 npm init -y
 npm i mineflayer
