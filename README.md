@@ -49,7 +49,7 @@ const bot = mineflayer.createBot({
   username: 'player1',
 })
 
-//on the event spawn, sent in chat the message 'helloworld'
+//on the event chat, if the messsage is hit, then it attacks
 bot.on('chat', (username, message) => {
 if(message == 'hit'){
   bot.attack(bot.nearestEntity())
