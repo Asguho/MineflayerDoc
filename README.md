@@ -80,7 +80,7 @@ bot.loadPlugin(pathfinder);
 bot.on('chat', (username, message) => {
 if(message == 'come'){
   const target = bot.nearestEntity();
-  bot.pathfinder.setGoal(new goals.GoalNear(p.x, p.y, p.z, 1))
+  bot.pathfinder.setGoal(new goals.GoalNear(target.x, target.y, target.z, 1))
   }
 })
 
