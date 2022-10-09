@@ -4,7 +4,7 @@
 - [mineflayer](https://github.com/PrismarineJS/mineflayer)
 - [mineflayer docs](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md)
 - [javascipt examples](https://github.com/PrismarineJS/mineflayer/tree/master/examples)
-- [python tutorial/example](https://github.com/PrismarineJS/mineflayer/tree/master/examples/python)
+- [python tutorial/examples](https://github.com/PrismarineJS/mineflayer/tree/master/examples/python)
 ## setup
 ```
 npm init -y
@@ -12,7 +12,7 @@ npm i mineflayer
 npm i mineflayer-pathfinder
 npm i mineflayer-collectblock
 ```
-## hello world
+## hello world example
 ```
 const mineflayer = require('mineflayer')
 
@@ -29,6 +29,7 @@ bot.on('spawn', (username, message) => {
 bot.on('kicked', console.log)
 bot.on('error', console.log)
 ```
+## crafting function example
 ```
 async function craftItem (name, amount) {
   amount = parseInt(amount, 10)
@@ -59,6 +60,3 @@ async function craftItem (name, amount) {
   }
 }
 ```
-
-
-https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md
