@@ -20,7 +20,7 @@ npm i mineflayer
 - nu kan du prøve og lave din første minecraft bot!!
 ## [Hello world example](https://github.com/PrismarineJS/mineflayer/blob/master/docs/tutorial.md#creating-a-bot)
 ```js
-const mineflayer = require('mineflayer')
+const mineflayer = require('mineflayer');
 
 //creating the bot
 const bot = mineflayer.createBot({
@@ -31,16 +31,16 @@ const bot = mineflayer.createBot({
 
 //on the event spawn, sent in chat the message 'helloworld'
 bot.on('spawn', () => {
-  bot.chat('hello world')
+  bot.chat('hello world');
 })
 
 // Log errors and kick reasons:
-bot.on('kicked', console.error)
-bot.on('error', console.error)
+bot.on('kicked', console.error);
+bot.on('error', console.error);
 ```
 ## [Attack example](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md#botattackentity-swing--true)
 ```js
-const mineflayer = require('mineflayer')
+const mineflayer = require('mineflayer');
 
 //creating the bot
 const bot = mineflayer.createBot({
@@ -51,14 +51,14 @@ const bot = mineflayer.createBot({
 
 //on the event chat, if the messsage is hit, then it attacks
 bot.on('chat', (username, message) => {
-if(message == 'hit'){
-  bot.attack(bot.nearestEntity())
+  if(message == 'hit'){
+    bot.attack(bot.nearestEntity());
   }
 })
 
 // Log errors and kick reasons:
-bot.on('kicked', console.error)
-bot.on('error', console.error)
+bot.on('kicked', console.error);
+bot.on('error', console.error);
 ```
 ## [pathfinding example](https://github.com/PrismarineJS/mineflayer-pathfinder#goalnearx-y-z-range)
 husk at installere pathfinderen:
