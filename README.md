@@ -164,7 +164,7 @@ async function craftItem (name, amount) {
 }
 ```
 
-# Example you can make
+# Example of things you can make!
 ## [Autoeat](https://github.com/link-discord/mineflayer-auto-eat)
 ## [perfekt bow](https://github.com/sefirosweb/minecraftHawkEye)
 ## [Auto equip armor](https://github.com/G07cha/MineflayerArmorManager)
